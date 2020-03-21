@@ -1,0 +1,30 @@
+
+/*--------------Scrollbar----------------*/
+body::-webkit-scrollbar {
+	width: 0.25rem;
+}
+
+body::-webkit-scrollbar-track{
+	background-color: #d1d1d1;
+}
+
+body::-webkit-scrollbar-thumb {
+	background-color: #000;
+}
+
+.wrapper{
+	width: 100%;
+	margin: 0 auto;
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 2fr 100vh 2fr; 
+}
+
+.heading{
+	height: 20px;
+	border: 1px solid black;
+}
+
+.goods{
+	border: 1px solid black;
+}
