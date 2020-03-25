@@ -1,0 +1,70 @@
+.collections{
+    position: relative;
+    padding: 10px;
+    grid-template-columns: repeat(10, 1fr);
+    grid-gap: 10px;
+    grid-template-rows: repeat(10, 1fr);
+}
+
+.collections section{
+    position: relative;
+    min-height: 35vh;
+    background-size: cover;
+    text-align: center;/*По горизонтали*/
+    align-content: center;/*По вертикали*/
+    padding: 10px;
+    cursor: pointer;
+    transition: all 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    overflow: hidden;
+}
+
+.collections section::before{
+    content: '';
+    position: absolute;
+    background: #000;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    transition: all 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+.collections section:hover::before{
+    opacity: .4;
+}
+
+
+.collections__item-1{
+    background: url('../img/collections-1.jpg');
+    background-position: 0% 70%;
+    grid-row: 1 / 7;
+    grid-column: 1 / 4;
+}
+.collections__item-2{
+    background: url('../img/collections-2.jpg');
+    background-position: 0% 60%;
+    grid-row: 1 / 6;
+    grid-column: 4 / 11;
+}
+.collections__item-3{
+    background: url('../img/collections-3.jpg');
+    background-position: 0% 55%;
+    grid-row: 7 / 11;
+    grid-column: 1 / 4;
+}
+.collections__item-4{
+    background: url('../img/collections-4.jpg');
+    background-position: 0% 50%;
+    grid-row: 6 / 11;
+    grid-column: 4 / 7;
+}
+.collections__item-5{
+    background: url('../img/collections-5.jpg');
+    background-position: 0% 50%;
+    grid-row: 6 / 11;
+    grid-column: 7 / 11;
+}
+
+.collections section:hover::before{
+    opacity: .4;
+}

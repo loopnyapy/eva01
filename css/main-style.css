@@ -1,0 +1,32 @@
+@import 'slider.css';
+@import 'navbar.css';
+@import 'collections.css';
+@import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
+
+*{
+    font-family: 'Quicksand', sans-serif;
+    color: #191919;
+    -webkit-font-smoothing: antialiased;
+}
+body::-webkit-scrollbar{
+	width: 0.5rem;
+}
+
+body::-webkit-scrollbar-track{
+	background-color: #d1d1d1;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #191919;
+    border-radius: 10px;
+}
+
+.grid{
+    display: grid;
+}
+/* 
+.wrapper{
+    grid-template-columns: 1fr;
+    grid-template-rows: 120px 1fr minmax(0,100vh) minmax(0,100vh);
+} */
+

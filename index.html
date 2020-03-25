@@ -3,27 +3,57 @@
 
     <head>
         <meta charset="UTF-8">
-        <link rel="stylesheet" href="main-style.css">
-        <link rel="stylesheet" href="normalize.css">
-        <script src="js.js"></script>
+        <link rel="stylesheet" href="css/main-style.css">
+        <link rel="stylesheet" href="css/normalize.css">
+        <script src="js.js" defer></script>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Diploma - sketch bruh</title>
     </head>
 
     <body>
-        <div class="slider-container">
-            <div class="slider-container__slides">
-                <img src="img/4.jpg" id="lastClone" alt="">
-                <img src="img/1.jpg" alt="">
-                <img src="img/2.jpg" alt="">
-                <img src="img/3.jpg" alt="">
-                <img src="img/4.jpg" alt="">
-                <img src="img/1.jpg" id="firstClone" alt="">
-                <button id="prevBtn">left</button>
-                <button id="nextBtn">right</button>
+        <div class="wrapper">
+            <header class="header grid">
+                <div class="header__logo"></div>
+            </header>
+            <nav class="navbar">
+                <div class="navbar__logo"><a href="#"></a></div>
+                <ul>
+                    <li><a href="#">New </a>
+                    <li><a href="#">Home </a>
+                    <li><a href="#">Fashion </a>
+                    <li><a href="#">Sale </a>
+                    <li><a href="#">Blog </a>
+                </ul>
+            </nav>
+            <div class="slider-container grid">
+                <div class="slider-container__slides">
+                    <img src="img/4.jpg" id="lastClone" alt="">
+                    <img src="img/1.jpg" alt="">
+                    <img src="img/2.jpg" alt="">
+                    <img src="img/3.jpg" alt="">
+                    <img src="img/4.jpg" alt="">
+                    <img src="img/1.jpg" id="firstClone" alt="">
+                    <img src="img/1.jpg" alt="">
+                </div>
+                <div class="slider-container__buttons">
+                    <img src="img/left.svg" id="prevBtn">
+                    <img src="img/right.svg" id="nextBtn">
+                </div>
+                <div class="slider-container__dots">
+                    <div class="slider-container__dot"></div>
+                    <div class="slider-container__dot"></div>
+                    <div class="slider-container__dot"></div>
+                    <div class="slider-container__dot"></div>
+                </div>
             </div>
+            <main class="collections grid">
+                <section class="collections__item-1">Darova</section>
+                <section class="collections__item-2"></section>
+                <section class="collections__item-3"></section>
+                <section class="collections__item-4"></section>
+                <section class="collections__item-5"></section>
+            </main>
         </div>
-
     </body>
 
 </html>

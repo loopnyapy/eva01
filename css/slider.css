@@ -1,0 +1,66 @@
+
+.slider-container{
+    position: relative;
+    margin: 0 auto;
+    max-height: 100vh;
+    overflow: hidden;
+}
+
+.slider-container__slides{
+    max-height: 100%;
+    display: flex;
+}
+
+.slider-container__buttons img{
+    position: absolute;
+    z-index: 3;
+    margin: 0 10px;
+    height: 3rem;
+    width: 3rem;
+    transition: 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+.slider-container__buttons img:hover{
+    opacity: .7;
+}
+
+#prevBtn{
+    left:0;
+    top:50%;
+    transform: translate(0,-50%);
+}
+
+#nextBtn{
+    right:0;
+    top:50%;
+    transform: translate(0,-50%);
+}
+
+.slider-container__slides img{
+    /*якобы не работает clientWidth на inline display*/
+    width: 100%;
+    object-fit: cover;
+}
+
+.slider-container__dots{
+    z-index: 9;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.slider-container__dots div{
+    margin: 0 4px;
+    display: inline-block;
+    background: #555;
+    opacity: .7;
+    width: 11px;
+    height: 11px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+
